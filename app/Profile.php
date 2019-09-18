@@ -29,7 +29,9 @@ class Profile extends Model
     public function fullName()
     {
 
-        return $this->first_name . ' + ' . $this->last_name;
+
+        return $this->first_name . ' - ' . $this->last_name;
+
 
     }
 
@@ -40,8 +42,14 @@ class Profile extends Model
 
     }
 
+
+    public function test2()
+    {
+        return 2;
+
     public function test1()
     {
         return 1;
+
     }
 }
